@@ -1,0 +1,194 @@
+/* ==================  MAIN STYLES ==================  */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	font-size: 13px;
+}
+a {
+	color: #0D99B7;
+	text-decoration: none;
+}
+/* ================== LEFT SIDE OF THE PAGE ==================  */
+.left-wrapper {
+	float: left;
+	width: 50%;
+	padding: 20px 0;
+	box-sizing: border-box;
+}
+.content-wrapper {
+	min-width: 360px;
+	max-width: 360px;
+	margin: 0 auto;
+}
+/* ==================  HEADER STYLES ==================  */
+.header {
+	position: relative;
+	height: 40px;
+	line-height: 26px;
+}
+.login {
+	position: absolute;
+	top: 8px;
+	right: 0;
+	span {
+		color: #666666;
+	}
+	.login-image {
+		position: relative;
+		top: 5px;
+	}
+}
+#logo {
+	margin-top: 5px;
+	width: 60px;
+	height: 30px;
+}
+/* ================== TRIAL STYLES ==================  */
+.free-trial{
+	margin: 40px 0;
+	h3 {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	p{
+		font-size: 12px; 
+		color: #666666;
+	}
+}
+/* ==================  INPUT STYLES ==================  */
+.reg-form input, .reg-form input:focus{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 20px;
+	border: transparent;
+	border-bottom: 1px solid #DADADA;
+	outline: none;
+	font-size: 13px;
+}
+.reg-form input::placeholder {
+	color: #666666;
+}
+#domain-name {
+	width: 245px;
+	margin-bottom: 0;
+	text-align: right;
+}
+.ref-text {
+	display: inline-block;
+	color: #666666;
+	margin-top: 10px;
+}
+/* ================== DROPDOWN ================== */
+.location {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+.country-drop {
+	min-width: 240px;
+	margin-right: 20px;
+}
+.country-drop:before, .currency-drop:before, .timezone-drop:before {
+	content: "Country";
+	position: absolute;
+	top: -13px;
+	left: 0;
+	font-size: 12px;
+	color: #666666;
+}
+.currency-drop:before {
+	content: "Currency"
+}
+.timezone-drop:before {
+	content: "Timezone"
+}
+select, select:focus {
+	height: 40px;
+	width: 100%;
+	border: transparent;
+	border-bottom: 1px solid #DADADA;
+	outline: none;
+	background: transparent;
+	line-height: 20px;
+	font-size: 14px;
+	color: #111111;
+}
+.dropdown-wrap {
+	position: relative;
+}
+.dropdown-wrap:after {
+	content: ' ';
+	display: inline-block;
+	width: 18px;
+	height: 15px;
+	position: absolute;
+	top: 14px;
+	right: 0;
+	background: white;
+}
+.arrow {
+	position: absolute;
+	top: 12px;
+	right: 0;
+	z-index: 1;
+}
+.complete, .complete:focus {
+	width: 360px;
+	height: 60px;
+	padding: 15px 30px;
+	margin: 50px 0 10px 0;
+	background: #0D99B7;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	outline: none;
+	box-sizing: border-box;
+	border-radius: 3px;
+	font-size: 16px;
+	color: #fff;
+}
+/* ==================  RIGHT SIDE OF THE PAGE ==================  */
+.right-wrapper {
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100vh;
+}
+.reg-image {
+	width: 100%;
+	min-height: 900px;
+	height: 100vh;
+}
+/* ==================  OTHER SCREENS ==================  */
+.clear-fix {
+	clear: both;
+}
+@media only screen and (max-width: 768px) {
+	.right-wrapper {
+		display: none;
+	}
+	.left-wrapper {
+		width: 100%;
+		clear: both;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.left-wrapper {
+		padding: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+

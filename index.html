@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="main-wrapper">
+		<!-- ============================== LEFT SIDE WITH INPUT FIELDS ============================== -->
+		<div class="left-wrapper">
+			<div class="content-wrapper">
+				<div class="header">
+					<img src="images/logo.png" id="logo">
+					<div class="login">
+						<span>Alredy have an account?</span> 
+						<a href="#">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="login-image">
+							<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="16" height="16">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.66667V13.3333C0 14.25 0.741667 15 1.66667 15H13.3333C14.25 15 15 14.25 15 13.3333V1.66667C15 0.75 14.25 0 13.3333 0H1.66667C0.741667 0 0 0.75 0 1.66667ZM10 5C10 6.38333 8.88333 7.5 7.5 7.5C6.11667 7.5 5 6.38333 5 5C5 3.61667 6.11667 2.5 7.5 2.5C8.88333 2.5 10 3.61667 10 5ZM2.5 11.6673C2.5 10.0007 5.83333 9.08398 7.5 9.08398C9.16667 9.08398 12.5 10.0007 12.5 11.6673V12.5007H2.5V11.6673Z" transform="translate(2.5 2.5)" fill="white"/>
+							</mask>
+							<g mask="url(#mask0)">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H20V20H0V0Z" fill="#0D99B7"/>
+							</g>
+						</svg>
+						Login
+						</a>
+					</div>
+				</div>
+				<div class="left-content">
+					<div class="free-trial">
+						<h3>Get started with your free 30-day trial</h3>
+						<p>No credit card required. Full feature access.</p>
+					</div>
+					<div class="reg-form">
+						<form>
+							<input type="text" name="email" placeholder="Email">
+							<input type="password" name="pass" placeholder="Password">
+							<input type="text" name="bsName" placeholder="What is your business name?" onkeyup="genDomain()" id="business">
+							<input type="text" name="domain" placeholder="domain-name" id="domain-name">.bookingwhale.com<br>
+							<span class="ref-text">This is the URL your customers will use to order your service</span>
+							<div class="location">
+								<div class="dropdown-wrap country-drop">
+									<select id="country" class="dropdown-content">
+										<option value="United States">United States</option>
+										<option value="Other country">Other country</option>
+									</select>
+									<label for="country" class="arrow">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M1.175 0L5 3.81667L8.825 0L10 1.175L5 6.175L0 1.175L1.175 0Z" transform="translate(5 6.66602)" fill="#666666"/>
+										</svg>
+									</label>
+								</div>
+								<div class="dropdown-wrap currency-drop">
+									<select id="currency" class="dropdown-content">
+										<option value="USD">USD</option>
+										<option value="Other currency">Other currency</option>
+									</select>
+									<label for="currency" class="arrow">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M1.175 0L5 3.81667L8.825 0L10 1.175L5 6.175L0 1.175L1.175 0Z" transform="translate(5 6.66602)" fill="#666666"/>
+										</svg>
+									</label>
+								</div>
+							</div>
+							<div class="dropdown-wrap timezone-drop">
+								<select id="timezone" class="dropdown-content">
+									<option value="(GTM-06:00) America/Chicago">(GTM-06:00) America/Chicago</option>
+									<option value="Other timezone">Other timezone</option>
+								</select>
+								<label for="timezone" class="arrow">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M1.175 0L5 3.81667L8.825 0L10 1.175L5 6.175L0 1.175L1.175 0Z" transform="translate(5 6.66602)" fill="#666666"/>
+									</svg>
+								</label>
+							</div>
+						</form>
+						<button class="complete">Complete registration</button>
+						<p>By clicking "Complete Registration" I agree to Bookingwhale’s Terms of Use and  Privacy Policy</p>
+						<div class="footer">
+							<h4>Need Help?</h4>
+							Just email: <a href="#">hello@bookingwhale.com</a> or visit our <a href="#">Help Center</a>
+						</div>
+					</div>
+				</div>
+				<div class="clear-fix"></div>
+			</div>
+		</div>
+		<!-- ============================== RIGHT SIDE WITH IMAGE ============================== -->
+		<div class="right-wrapper">
+			<img class="reg-image" src="images/registration-main.jpg" alt="placeholder+image">
+		</div>
+		<div class="clear-fix"></div>
+	</div>
+</body>
+<script type="text/javascript">
+	function genDomain() {
+		document.getElementById('domain-name').value = document.getElementById('business').value;
+	}
+</script>
+</html>
+
+
+
+
+
+
