@@ -12,6 +12,12 @@ a {
 	color: #0D99B7;
 	text-decoration: none;
 }
+p {
+	color: #666666;
+}
+h2 {
+	font-size: 18px;
+}
 /* ================== LEFT SIDE OF THE PAGE ==================  */
 .left-wrapper {
 	float: left;
@@ -73,7 +79,8 @@ a {
 	color: #666666;
 }
 #domain-name {
-	width: 245px;
+	width: 100%;
+	max-width: 245px;
 	margin-bottom: 0;
 	text-align: right;
 }
@@ -90,7 +97,7 @@ a {
 	margin-bottom: 35px;
 }
 .country-drop {
-	min-width: 240px;
+	width: 100%;
 	margin-right: 20px;
 }
 .country-drop:before, .currency-drop:before, .timezone-drop:before {
@@ -137,11 +144,10 @@ select, select:focus {
 	right: 0;
 	z-index: 1;
 }
-.complete, .complete:focus {
+button, button:focus {
 	width: 360px;
 	height: 60px;
 	padding: 15px 30px;
-	margin: 50px 0 10px 0;
 	background: #0D99B7;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	outline: none;
@@ -150,21 +156,29 @@ select, select:focus {
 	font-size: 16px;
 	color: #fff;
 }
+.complete {
+	margin: 50px 0 10px 0;
+}
 /* ==================  RIGHT SIDE OF THE PAGE ==================  */
 .right-wrapper {
 	float: right;
-	position: absolute;
-	top: 0;
-	right: 0;
 	width: 50%;
-	height: 100vh;
 }
 .reg-image {
 	width: 100%;
 	min-height: 900px;
-	height: 100vh;
+	height: 100%;
 }
 /* ==================  OTHER SCREENS ==================  */
+.second-page {
+	margin-top: 276px;
+	p {
+		margin: 5px 0 10px;
+	}
+}
+.footer {
+	margin-top: 60px;
+}
 .clear-fix {
 	clear: both;
 }
@@ -176,10 +190,21 @@ select, select:focus {
 		width: 100%;
 		clear: both;
 	}
+	.second-page {
+		margin-top: 180px;
+	}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 365px) {
 	.left-wrapper {
 		padding: 20px;
+	}
+	.content-wrapper {
+		max-width: 280px;
+		min-width: 0;
+	}
+	button {
+		width: 100%;
+		max-width: 320px;
 	}
 }
 

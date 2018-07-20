@@ -74,15 +74,15 @@
 								</label>
 							</div>
 						</form>
-						<button class="complete">Complete registration</button>
-						<p>By clicking "Complete Registration" I agree to Bookingwhale’s Terms of Use and  Privacy Policy</p>
-						<div class="footer">
-							<h4>Need Help?</h4>
-							Just email: <a href="#">hello@bookingwhale.com</a> or visit our <a href="#">Help Center</a>
-						</div>
+						<button class="complete" onclick="nextPage()">Complete Registration</button>
+						<p>By clicking "Complete Registration" I agree to Bookingwhale’s <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
 					</div>
 				</div>
 				<div class="clear-fix"></div>
+				<div class="footer">
+					<h4>Need Help?</h4>
+					Just email: <a href="mailto:hello@bookingwhale.com">hello@bookingwhale.com</a> or visit our <a href="#">Help Center</a>
+				</div>
 			</div>
 		</div>
 		<!-- ============================== RIGHT SIDE WITH IMAGE ============================== -->
@@ -95,6 +95,9 @@
 <script type="text/javascript">
 	function genDomain() {
 		document.getElementById('domain-name').value = document.getElementById('business').value;
+	}
+	function nextPage() {
+		window.open("index-2.html");
 	}
 </script>
 </html>
