@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Registration</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -87,7 +88,6 @@
 		</div>
 		<!-- ============================== RIGHT SIDE WITH IMAGE ============================== -->
 		<div class="right-wrapper">
-			<img class="reg-image" src="images/registration-main.jpg" alt="placeholder+image">
 		</div>
 		<div class="clear-fix"></div>
 	</div>
@@ -97,7 +97,7 @@
 		document.getElementById('domain-name').value = document.getElementById('business').value;
 	}
 	function nextPage() {
-		window.open("index-2.html");
+		window.open("index-2.html", "_self");
 	}
 </script>
 </html>

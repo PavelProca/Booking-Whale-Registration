@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Registration</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -29,7 +30,7 @@
 				<div class="left-content second-page">
 					<h2>Congratulations!</h2>
 					<p>You're all set to enjoy a better auto detailing business experience!</p>
-					<button>Start Using Bookingwhale</button>
+					<button onclick="nextPage()">Start Using Bookingwhale</button>
 				</div>
 				<div class="footer">
 					<h4>Need Help?</h4>
@@ -38,8 +39,7 @@
 			</div>
 		</div>
 		<!-- ============================== RIGHT SIDE WITH IMAGE ============================== -->
-		<div class="right-wrapper">
-			<img class="reg-image" src="images/reg-main-2.jpg">
+		<div class="right-wrapper second-image">
 		</div>
 		<div class="clear-fix"></div>
 	</div>
@@ -47,6 +47,9 @@
 <script type="text/javascript">
 	function genDomain() {
 		document.getElementById('domain-name').value = document.getElementById('business').value;
+	}
+	function nextPage() {
+		window.open("index.html", "_self");
 	}
 </script>
 </html>
