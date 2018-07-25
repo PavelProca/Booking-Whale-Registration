@@ -34,9 +34,18 @@
 					</div>
 					<div class="reg-form">
 						<form>
-							<input type="text" name="email" placeholder="Email">
-							<input type="password" name="pass" placeholder="Password">
-							<input type="text" name="bsName" placeholder="What is your business name?" onkeyup="genDomain()" id="business">
+							<div class="material-input">
+								<input type="text" name="email" id="email" required>
+								<label for="email" class="input-text">Email</label>
+							</div>
+							<div class="material-input">
+								<input type="password" name="pass" id="pass" required>
+								<label for="pass" class="input-text">Password</label>
+							</div>
+							<div class="material-input">
+								<input type="text" name="bsName" onkeyup="genDomain()" id="business" required>
+								<label for="business" class="input-text">What is your business name?</label>
+							</div>
 							<input type="text" name="domain" placeholder="domain-name" id="domain-name">.bookingwhale.com<br>
 							<span class="ref-text">This is the URL your customers will use to order your service</span>
 							<div class="location">
